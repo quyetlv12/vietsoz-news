@@ -90,7 +90,7 @@ li {
   width: 180px;
   height: 35px;
   border-radius: 5px;
-  border: .5px solid #d8d8d8;
+  border: 0.5px solid #d8d8d8;
 }
 
 .wrapper .header .container .header__body .header__searchBox input::placeholder {
@@ -134,7 +134,7 @@ li {
     width: 500px;
     height: 35px;
     border-radius: 5px;
-    border: .5px solid #d8d8d8;
+    border: 0.5px solid #d8d8d8;
   }
   .wrapper .header .header__searchBox input::placeholder {
     margin-left: 20px;
@@ -257,9 +257,20 @@ li {
   font-size: 14px;
 }
 
+@media (max-width: 600px) {
+  .wrapper .main .container .main__content .main__content-left .new-event .new-event-body .event-body-content {
+    flex: 100%;
+  }
+}
+
 .wrapper .main .container .main__content .main__content-right {
   flex: 30%;
   padding-left: 7px;
+}
+
+.wrapper .main .container .main__content .main__content-right div .right__title.mt-2 {
+  padding-bottom: 15px;
+  border-bottom: 1px solid #01a050;
 }
 
 .wrapper .main .container .main__content .main__content-right .right__title-content .content-body {
@@ -285,6 +296,15 @@ li {
   }
 }
 
+@media (max-width: 900px) {
+  .wrapper .main .container .main__content .main__content-left {
+    flex: 100%;
+  }
+  .wrapper .main .container .main__content .main__content-right {
+    flex: 100%;
+  }
+}
+
 .wrapper .footer {
   background-color: #01a050;
   color: #fff;
@@ -298,6 +318,18 @@ li {
 .wrapper .footer .container .footer__detail .detail-content {
   flex: 25%;
   padding: 10px 10px;
+}
+
+@media (max-width: 768px) {
+  .wrapper .footer .container .footer__detail .detail-content {
+    flex: 50%;
+  }
+}
+
+@media (max-width: 480px) {
+  .wrapper .footer .container .footer__detail .detail-content {
+    flex: 100%;
+  }
 }
 
 .wrapper .footer .container .detail-content.detail__about ul li {

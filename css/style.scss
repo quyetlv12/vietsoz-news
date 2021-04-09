@@ -89,8 +89,8 @@ li {
             width: 180px;
             height: 35px;
             border-radius: 5px;
-            border: .5px solid #d8d8d8;
-            &::placeholder{
+            border: 0.5px solid #d8d8d8;
+            &::placeholder {
               margin-left: 20px;
               color: #d8d8d8;
             }
@@ -99,7 +99,7 @@ li {
             position: absolute;
             border: none;
             line-height: 80px;
-            right:15px;
+            right: 15px;
             background: none;
             .fa.fa-search {
               color: #afafaf;
@@ -126,9 +126,9 @@ li {
         }
       }
     }
-    @media (max-width:960px) {
+    @media (max-width: 960px) {
       .header__nav {
-     display: none
+        display: none;
       }
       .header__searchBox {
         position: relative;
@@ -136,8 +136,8 @@ li {
           width: 500px;
           height: 35px;
           border-radius: 5px;
-          border: .5px solid #d8d8d8;
-          &::placeholder{
+          border: 0.5px solid #d8d8d8;
+          &::placeholder {
             margin-left: 20px;
             color: #d8d8d8;
           }
@@ -146,7 +146,7 @@ li {
           position: absolute;
           border: none;
           line-height: 80px;
-          right:15px;
+          right: 15px;
           background: none;
           .fa.fa-search {
             color: #afafaf;
@@ -159,9 +159,6 @@ li {
           }
         }
       }
-      
-
-      
     }
   }
 
@@ -279,6 +276,11 @@ li {
                   }
                 }
               }
+              @media (max-width: 600px) {
+                .event-body-content {
+                  flex: 100%;
+                }
+              }
             }
           }
         }
@@ -287,6 +289,8 @@ li {
           padding-left: 7px;
           div {
             .right__title.mt-2 {
+              padding-bottom: 15px;
+              border-bottom: 1px solid #01a050;
               h3 {
               }
             }
@@ -319,6 +323,14 @@ li {
             flex: 100%;
           }
         }
+        @media (max-width: 900px) {
+          .main__content-left {
+            flex: 100%;
+          }
+          .main__content-right {
+            flex: 100%;
+          }
+        }
       }
     }
   }
@@ -337,6 +349,16 @@ li {
           padding: 10px 10px;
         }
         h2 {
+        }
+        @media (max-width: 768px) {
+          .detail-content {
+            flex: 50%;
+          }
+        }
+        @media (max-width: 480px) {
+          .detail-content {
+            flex: 100%;
+          }
         }
       }
 
@@ -378,6 +400,8 @@ li {
         justify-content: center;
         align-items: center;
       }
+    
     }
+   
   }
 }
