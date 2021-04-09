@@ -44,6 +44,7 @@ button {
 
 a {
   text-decoration: none;
+  color: #000;
 }
 
 img {
@@ -209,6 +210,8 @@ li {
 .wrapper .main .container .main__content .main__content-left .new-event .new-event-title h3 {
   background-color: #01a050;
   width: 20%;
+  line-height: 44px;
+  height: 44px;
   text-align: center;
   color: #fff;
 }
@@ -233,7 +236,7 @@ li {
 
 .wrapper .main .container .main__content .main__content-left .new-event .new-event-body .event-body-content .body-content-image {
   width: 100%;
-  padding: 21px;
+  padding: 0 10px;
 }
 
 .wrapper .main .container .main__content .main__content-left .new-event .new-event-body .body-event-small {
@@ -246,7 +249,8 @@ li {
 }
 
 .wrapper .main .container .main__content .main__content-left .new-event .new-event-body .body-event-small .event-small__content .content-image img {
-  width: 100%;
+  width: 200px;
+  height: auto;
 }
 
 .wrapper .main .container .main__content .main__content-left .new-event .new-event-body .body-event-small .event-small__content .content-title {
@@ -265,7 +269,7 @@ li {
 
 .wrapper .main .container .main__content .main__content-right {
   flex: 30%;
-  padding-left: 7px;
+  padding-left: 15px;
 }
 
 .wrapper .main .container .main__content .main__content-right div .right__title.mt-2 {
@@ -307,6 +311,7 @@ li {
 
 .wrapper .footer {
   background-color: #01a050;
+  margin-top: 10px;
   color: #fff;
 }
 
