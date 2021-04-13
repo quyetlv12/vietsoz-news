@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "index.html"
+    "start" : "--port 7878 --watch index.html"
   },
   "repository": {
     "type": "git",

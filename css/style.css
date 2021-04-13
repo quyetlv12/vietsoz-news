@@ -70,6 +70,10 @@ li {
   margin-left: 20px;
 }
 
+.wrapper {
+  position: relative;
+}
+
 .wrapper .header {
   height: 80px;
   line-height: 80px;
@@ -353,5 +357,32 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.wrapper .modal {
+  position: fixed;
+  top: 20%;
+  display: flex;
+  left: 30%;
+  width: 500px;
+  height: 500px;
+  background-color: #f8a488;
+  border-radius: 5px;
+  display: none;
+}
+
+.wrapper .show-modal {
+  display: block;
+  transition: 2s ease-out;
+  animation: anmPopup;
+}
+
+@keyframes anmPopup {
+  0% {
+    margin-top: 10px;
+  }
+  100% {
+    margin: 50px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
