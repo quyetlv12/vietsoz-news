@@ -374,7 +374,8 @@ li {
   align-items: center;
 }
 
-.wrapper form input[type=text], .wrapper form select {
+.wrapper form input[type="text"],
+.wrapper form select {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -384,9 +385,9 @@ li {
   box-sizing: border-box;
 }
 
-.wrapper form input[type=submit] {
+.wrapper form input[type="submit"] {
   width: 100%;
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
@@ -395,7 +396,7 @@ li {
   cursor: pointer;
 }
 
-.wrapper form input[type=submit]:hover {
+.wrapper form input[type="submit"]:hover {
   background-color: #45a049;
 }
 
@@ -408,19 +409,31 @@ li {
 .wrapper .modal {
   position: fixed;
   top: 10%;
-  display: flex;
   left: 30%;
   width: 500px;
-  height: 500px;
+  height: 300px;
   background-color: #f8a488;
   border-radius: 5px;
   display: none;
 }
 
+.wrapper .modal .modal-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.wrapper .modal .modal-content .content-image {
+  flex: 50%;
+}
+
+.wrapper .modal .modal-content .content-text {
+  flex: 50%;
+}
+
 .wrapper .show-modal {
   display: block;
   transition: 2s ease-out;
-  transition: opacity .15s linear;
+  transition: opacity 0.15s linear;
   animation: anmPopup;
 }
 

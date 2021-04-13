@@ -55,11 +55,11 @@ li {
 .ml-2 {
   margin-left: 20px;
 }
-.d-flex-box{
+.d-flex-box {
   margin-top: 20px;
   display: flex;
   justify-content: center;
-  button{
+  button {
     border-radius: 20px;
     color: white;
     border: none;
@@ -411,7 +411,6 @@ li {
           li {
             @include mt-2();
             .fas.fa-chevron-right {
-              
             }
           }
         }
@@ -421,12 +420,11 @@ li {
         justify-content: center;
         align-items: center;
       }
-    
     }
-   
   }
-  form{
-    input[type=text], select {
+  form {
+    input[type="text"],
+    select {
       width: 100%;
       padding: 12px 20px;
       margin: 8px 0;
@@ -435,10 +433,10 @@ li {
       border-radius: 4px;
       box-sizing: border-box;
     }
-    
-    input[type=submit] {
+
+    input[type="submit"] {
       width: 100%;
-      background-color: #4CAF50;
+      background-color: #4caf50;
       color: white;
       padding: 14px 20px;
       margin: 8px 0;
@@ -446,11 +444,11 @@ li {
       border-radius: 4px;
       cursor: pointer;
     }
-    
-    input[type=submit]:hover {
+
+    input[type="submit"]:hover {
       background-color: #45a049;
     }
-    
+
     div {
       border-radius: 5px;
       background-color: #f2f2f2;
@@ -460,57 +458,43 @@ li {
   .modal {
     position: fixed;
     top: 10%;
-    display: flex;
     left: 30%;
     width: 500px;
-    height: 500px;
+    height: 300px;
     background-color: #f8a488;
     border-radius: 5px;
     display: none;
-    
-    .modal-dialog {
-      .modal-content {
-        .modal-header {
-        }
-        .modal-body {
-        }
-        .modal-footer {
-        }
-        .modal-title {
-        }
-        .btn-close {
-          &:hover {}
-          &:active {}
-          &:focus {}
-        }
-        p {
-        }
-        .btn.btn-secondary {
-          &:hover {}
-          &:active {}
-          &:focus {}
-        }
-        .btn.btn-primary {
-          &:hover {}
-          &:active {}
-          &:focus {}
-        }
+
+
+      
+  .modal-content {
+    display: flex;
+    flex-wrap: wrap;
+    .content-image {
+      flex: 50%;
+      img {
+      }
+    }
+    .content-text {
+      flex: 50%;
+      h2 {
       }
     }
   }
-  .show-modal{
+    
+  }
+  .show-modal {
     display: block;
-    transition:2s ease-out;
-    transition: opacity .15s linear;
+    transition: 2s ease-out;
+    transition: opacity 0.15s linear;
     animation: anmPopup;
   }
-  @keyframes anmPopup{
-  0%{
-    margin-top: 10px;
+  @keyframes anmPopup {
+    0% {
+      margin-top: 10px;
+    }
+    100% {
+      margin: 50px;
+    }
   }
-  100%{
-    margin: 50px;
-  }
-  }
-  
 }
