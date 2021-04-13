@@ -14,12 +14,12 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
-
     <link rel="shortcut icon" href="./images/logo.png" />
   </head>
   <body>
     <div class="wrapper">
       <!-- header -->
+      <div class="d-flex-box"><a href="#form"><button>ĐẶT HÀNG NGAY</button></a></div>
       <header class="header">
         <div class="container">
           <div class="header__body">
@@ -476,8 +476,29 @@
           </div>
         </div>
       </main>
+
+
+      <section id="form">
+
+        <div class="container">
+          <form action="/action_page.php">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            <label for="country">Country</label>
+            <select id="country" name="country">
+              <option value="australia">Australia</option>
+              <option value="canada">Canada</option>
+              <option value="usa">USA</option>
+            </select>
+          
+            <input type="submit" value="Submit">
+          </form>
+        </div>
+      </section>
       <!-- footer  -->
-      <footer class="footer">
+      <footer class="footer" id="footer">
         <div class="container">
           <div class="footer__detail">
             <div class="detail-content detail__about">
@@ -551,8 +572,7 @@
               <p>Modal body text goes here.</p>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="btn-close">Close</button>
             </div>
           </div>
         </div>

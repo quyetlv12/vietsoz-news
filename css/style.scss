@@ -55,6 +55,19 @@ li {
 .ml-2 {
   margin-left: 20px;
 }
+.d-flex-box{
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  button{
+    border-radius: 20px;
+    color: white;
+    border: none;
+    width: 200px;
+    height: 50px;
+    background-color: #f3c81a;
+  }
+}
 @mixin fz-sm {
   font-size: 14px;
 }
@@ -412,10 +425,41 @@ li {
     }
    
   }
-  
+  form{
+    input[type=text], select {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    
+    input[type=submit] {
+      width: 100%;
+      background-color: #4CAF50;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    input[type=submit]:hover {
+      background-color: #45a049;
+    }
+    
+    div {
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+  }
   .modal {
     position: fixed;
-    top: 20%;
+    top: 10%;
     display: flex;
     left: 30%;
     width: 500px;
@@ -423,6 +467,7 @@ li {
     background-color: #f8a488;
     border-radius: 5px;
     display: none;
+    
     .modal-dialog {
       .modal-content {
         .modal-header {
@@ -456,6 +501,7 @@ li {
   .show-modal{
     display: block;
     transition:2s ease-out;
+    transition: opacity .15s linear;
     animation: anmPopup;
   }
   @keyframes anmPopup{
