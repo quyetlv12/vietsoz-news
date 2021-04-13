@@ -9,7 +9,10 @@ btnClosePopup.addEventListener('click', ()=>{
 const footer = document.querySelector('#footer');
 
 
-
+window.addEventListener('beforeunload', function (e) {
+    e.preventDefault();
+    e.returnValue = '';
+});
 
 window.addEventListener("DOMContentLoaded", ()=>{
     var modal = document.querySelector('#modal'); 
@@ -19,10 +22,7 @@ window.addEventListener("DOMContentLoaded", ()=>{
 })
 
 
-window.addEventListener('beforeunload', function (e) {
-    e.preventDefault();
-    e.returnValue = '';
-});
+
 
 window.addEventListener('scroll',() =>{
     let footer = document.querySelector('#footer')
